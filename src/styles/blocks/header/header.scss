@@ -1,0 +1,15 @@
+.header{
+	&__top{
+		height: 50px;
+		background-color: $lightGrey;
+	}
+	&__middle{
+		height: 120px;
+		background-color: $white;
+	}
+	&__bottom{
+		height: 80px;
+		background-color: $white;
+		border-top: 1px solid $lightGrey;
+	}
+}

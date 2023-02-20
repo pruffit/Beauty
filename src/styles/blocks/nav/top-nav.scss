@@ -1,0 +1,21 @@
+.top-nav{
+	height: inherit;
+	&__list{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: inherit;
+	}
+	&__item{
+		&:not(:last-child){
+			margin-right: 30px;
+		}
+	}
+	&__link{
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 16.41px;
+		color: $dark;
+	}
+}
