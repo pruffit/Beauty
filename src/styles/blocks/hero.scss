@@ -37,6 +37,7 @@
 		min-width: 583px;
 		height: 583px;
 		z-index: 3;
+		pointer-events: none;
 	}
 	&__title{
 		font-size: 48px;

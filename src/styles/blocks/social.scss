@@ -1,0 +1,29 @@
+.social{
+	display: flex;
+	align-items: center;
+	&__item{
+		position: relative;
+		width: 45px;
+		height: 45px;
+		border: 2px solid $primary;
+		border-radius: 50%;
+		&:not(:last-child){
+			margin-right: 20px;
+		}
+	}
+	&__link{
+		width: 22px;
+		height: 22px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-decoration: none;
+		color: transparent;
+	}
+	&__image{
+		fill: $primary;
+		width: 22px;
+		height: 22px;
+	}
+}
