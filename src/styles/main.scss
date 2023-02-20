@@ -24,5 +24,12 @@ html{
 		border: 2px solid $primary;
 		color: $black;
 	}
+	&--hero{
+		height: 40px;
+		background-color: transparent;
+		border: 2px solid $white;
+		color: $white;
+		letter-spacing: 0.05em;
+	}
 }
 @import './blocks/**/*.scss';
