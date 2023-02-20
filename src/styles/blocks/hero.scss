@@ -1,5 +1,6 @@
 .hero{
 	background-color: $primary;
+	overflow: hidden;
 	&__inner{
 		position: relative;
 		display: flex;
