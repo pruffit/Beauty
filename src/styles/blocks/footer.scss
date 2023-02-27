@@ -1,18 +1,31 @@
 .footer{
 	&__top{
-		height: 120px;
+		height: initial;
 		background-color: $white;
+		@include _Laptop{
+			height: 120px;
+		}
 		&-inner{
+			padding: 20px 0;
 			height: inherit;
 			display: flex;
+			flex-wrap: wrap;
 			align-items: center;
 			justify-content: space-between;
+			@include _Laptop{
+				padding: initial;
+				flex-wrap: initial;
+			}
 			.adress{
 				text-decoration: none;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 16.41px;
 				color: $black;
+				margin-bottom: 10px;
+				@include _Laptop{
+					margin-bottom: 0;
+				}
 			}
 			.phone{
 				text-decoration: none;
@@ -20,22 +33,39 @@
 				font-size: 16px;
 				font-weight: 400;
 				line-height: 18.75px;
+				margin-bottom: 10px;
+				@include _Laptop{
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
 	&__bottom{
-		height: 64px;
+		height: initial;
+		padding: 20px 0;
 		background-color: $lightGrey;
+		@include _Laptop{
+			height: 64px;
+			padding: initial;
+		}
 		&-inner{
 			height: inherit;
 			display: flex;
+			flex-wrap: wrap;
 			align-items: center;
 			justify-content: space-between;
+			@include _Laptop{
+				flex-wrap: initial;
+			}
 			.copy{
 				font-size: 12px;
 				font-weight: 400;
 				line-height: 14.06px;
 				color: $darkGrey;
+				margin-bottom: 10px;
+				@include _Laptop{
+					margin-bottom: 0;
+				}
 			}
 			.poly{
 				text-decoration: none;

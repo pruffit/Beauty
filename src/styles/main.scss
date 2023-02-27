@@ -7,22 +7,34 @@ html{
 	font-family: 'Roboto', sans-serif;
 }
 .container{
-	max-width: 1110px;
+	max-width: 1130px;
 	width: 100%;
 	margin: 0 auto;
 	height: inherit;
+	padding: 0 10px;
+	@include _Tablet{
+		max-width: 1150px;
+		padding: 0 20px;
+	}
 }
 .button{
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 16.41px;
+	@include _Tablet{
+		font-size: 14px;
+	}
 	&--default{
-		width: 170px;
+		width: 140px;
 		height: 40px;
 		border-radius: 40px;
 		background-color: transparent;
 		border: 2px solid $primary;
 		color: $black;
+		@include _Tablet{
+			width: 170px;
+			height: 40px;
+		}
 	}
 	&--hero{
 		width: 170px;
